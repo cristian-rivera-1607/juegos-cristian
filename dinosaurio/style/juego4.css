@@ -1,0 +1,82 @@
+body {   
+    margin: 0; /*  elimina la margen*/
+    padding: 0; /* elimina el relleno predeterminado*/
+    font-family: 'Sans-Serif'; /* fuente de texto */
+}
+
+/* aca elaboraremos en encabezado */
+#encabezado {
+    width: 100%; /* aca en encabezado ocupe toda la pagina*/
+    background: #c7b8b8; /* aca ponemos el color de fondo */
+    height: 100px; /* fija la altura del encabezado */
+    position: fixed; /* fijamos una posicion fija en la pantalla*/
+    top: 0; /* colocamos en la posisicion superior */
+    left: 0; /* colocamos en la posicion izquierda */
+    z-index: 1000; /* esto hara que el encabezado este por encima de otros elementos*/
+    display: flex; /* hacemos que el contenedor sea flexible para alinear los elementos */
+    align-items: center; /* centra los elementos del contenedor */
+    justify-content: center; /* centrar los elementos */
+}
+
+/* Título dentro del encabezado */
+#nombre {
+    text-align: center; /* centraremos el nombre  */
+}
+
+#nombre h2 {
+    font-size: 36px; /*tamaño de la letra */
+    margin: 0; /* eliminar la margen del h2 */
+    font-family: 'Sans-Serif'; /* fuente del titulo */
+}
+
+/* Navegación */
+nav {
+    position: fixed; /* para que quede fija en la pantalla */
+    top: 0; /* parte superior*/
+    right: 0; /* para que quede en la parte derecha */
+    background: #333; /*  color del fondo del nav */
+    padding: 10px; /* agregar espacio entre los enlaces */
+    border-radius: 0 0 0 10px; /* rodeondea la ezquina inferior de izquierda de navegacion */
+    z-index: 1000; /* aca haremos que la navegacion quede encima del encabezado */
+}
+
+nav a {
+    color: #fff; /* color del texto*/
+    text-decoration: none; /* elimina el subrayado de los enlaces */
+    margin: 0 10px; /* agrega espacio horizontal entre los enlaces */
+    font-size: 16px; /* tamaño de la fuente */
+}
+
+nav a:hover {
+    text-decoration: underline; /* aplica lso estilos cuando el cursor esta en un enlase */
+}
+
+/* Contenido principal */
+main {
+    padding-top: 150px; /* Para dar espacio debajo del encabezado y la navegación */
+    text-align: center; /* centrar un elemento */ 
+}
+
+h1 {
+    font-size: 36px; /* tamaño de la letra */
+}
+
+/* Semáforo */
+.circulo {
+    width: 100px; /* ancho de los elementos con la clase circulo a 10 px */
+    height: 100px; /* define la altura de los elementos a 100px */
+    border-radius: 50%; /* convierte los elementos en circulo */
+    margin: 10px auto; /* establece una margen de 10 px en la parte superior y inferior del elemento  usa auto para centrar el elemento horizontal en su contendedor */
+    background-color: grey; /* define el color del fondo de los elementos gris   */
+    display: inline-block; /* configura el elemento como inline-blocks */
+}
+
+footer {
+    position: fixed; /* fija el pie de pagina en una posicion especifica */
+    background-color: #c7b8b8; /* color de fondo */
+    padding: 20px; /*añade un espaciado interno de 20pc alrededor del contenido de pie de pagina */
+    text-align: center; /* centra el texto en el pie de pagina */
+    bottom: 0; /*ubica el pie de pagina en la parte inferior de la ventana*/
+    width: 100%; /* establece el ancho de pie de pagina al 100 */
+}
+

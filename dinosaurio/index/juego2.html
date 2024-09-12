@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Caro Pastorino">
+    <title>ACTIVIDAD JS</title>
+    <link rel="stylesheet" href="../style/juego2.css">
+</head>
+<body>
+    <header> <!-- aca empezaremos a diseñar en la parte superior de la pagina -->
+        <div id="encabezado"> <!-- aca elaboramos un contenedor donde de elaborara el encabezado-->
+            <nav> <!-- nav lo utilizamos para una seccion de navegacion -->
+                <a href="../index/indexprincipal.html">HOME</a> <!-- aca es donde le damos la dirreccion de la pagina donde los deberia de llevar al precionar una seccion -->
+            </nav>
+        </div>
+    </header>
+    <main> <!-- aca donde empezamos a diseñar la parte principal de la pagina-->
+        <h1>Adivina el Número</h1> <!-- en la pagina principal se mostrara este titulo de nivel 1-->
+        <p>Intenta adivinar un número entre 1 y 100.</p> <!-- se mostrara este texto cuando el numero no sea el correcto. -->
+        <input type="number" id="numero" placeholder="Escribe tu número"> <!--  Campo de entrada donde el usuario puede escribir un número.-->
+        <button onclick="adivinar()">Adivinar</button> <!-- aca se creo el boton de adivinar. -->
+        <p id="resultado"></p>
+    </main>
+    <footer> <!-- aca empezaremos a elaborar un pie de pagina-->
+        <div class="container"> <!-- es un contenedor con una clase "container" para el estilo. -->
+            <p>© 2024 Cristian Camilo Rivera. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../main/juego2.js"></script>
+</body>
+</html>

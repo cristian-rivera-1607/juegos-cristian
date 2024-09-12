@@ -1,0 +1,108 @@
+body {   
+    margin: 0; /*  elimina la margen*/
+    padding: 0; /* elimina el relleno predeterminado*/
+    font-family: 'Sans-Serif'; /* fuente de texto */
+}
+
+/* aca elaboraremos en encabezado */
+#encabezado {
+    width: 100%; /* aca en encabezado ocupe toda la pagina*/
+    background: #c7b8b8; /* aca ponemos el color de fondo */
+    height: 100px; /* fija la altura del encabezado */
+    position: fixed; /* fijamos una posicion fija en la pantalla*/
+    top: 0; /* colocamos en la posisicion superior */
+    left: 0; /* colocamos en la posicion izquierda */
+    z-index: 1000; /* esto hara que el encabezado este por encima de otros elementos*/
+    display: flex; /* hacemos que el contenedor sea flexible para alinear los elementos */
+    align-items: center; /* centra los elementos del contenedor */
+    justify-content: center; /* centrar los elementos */
+}
+
+/* Título dentro del encabezado */
+#nombre {
+    text-align: center; /* centraremos el nombre  */
+}
+
+#nombre h2 {
+    font-size: 36px; /*tamaño de la letra */
+    margin: 0; /* eliminar la margen del h2 */
+    font-family: 'Sans-Serif'; /* fuente del titulo */
+}
+
+/* Navegación */
+nav {
+    position: fixed; /* para que quede fija en la pantalla */
+    top: 0; /* parte superior*/
+    right: 0; /* para que quede en la parte derecha */
+    background: #333; /*  color del fondo del nav */
+    padding: 10px; /* agregar espacio entre los enlaces */
+    border-radius: 0 0 0 10px; /* rodeondea la ezquina inferior de izquierda de navegacion */
+    z-index: 1000; /* aca haremos que la navegacion quede encima del encabezado */
+}
+
+nav a {
+    color: #fff; /* color del texto*/
+    text-decoration: none; /* elimina el subrayado de los enlaces */
+    margin: 0 10px; /* agrega espacio horizontal entre los enlaces */
+    font-size: 16px; /* tamaño de la fuente */
+}
+
+nav a:hover {
+    text-decoration: underline; /* aplica lso estilos cuando el cursor esta en un enlase */
+}
+
+/* Contenido principal */
+main {
+    padding-top: 150px; /* Para dar espacio debajo del encabezado y la navegación */
+    text-align: center; /* centrar un elemento */ 
+}
+
+h1 {
+    font-size: 36px; /* tamaño de la letra */
+}
+
+p {
+    font-size: 20px; /* tamaño de la letra*/
+    margin: 20px auto; /* margen de 20 px */
+    max-width: 800px; /* establece el ancho maximo del parrafo en 800px */
+    font-family: 'Courier New', Courier, monospace; /* fuente del texto */
+}
+
+#cajaSlide {
+    display: block; /* establece que el contenedor se comporte como un elemento del bloque ocupando un ancho completo disponible*/
+    margin: 0; /* elimina cualquier margen alrededor del contenedor */
+    width: 100%; /* hace que el contenedor ocupe el 100% del ancho de la pagina */
+    text-align: center; /* centra el contenido del contenedor horizontalmente */
+}
+
+img.imgSlide {
+    max-width: 100%; /* asegura que la imagen no acceda el ancho de su contenedor */
+    height: auto; /* mantiene la proporcion de la imagen ajustantando automaticamente la altura  */
+    display: block; /* cambia la visualizacion de la imagen a bloque lo que elimina el espacio en blanco bajo la imagen*/ 
+    margin: 0 auto; /* centra la imagen horizontalmente dentro de su contendedor */
+}
+
+#cajaSlide img {
+    max-width: 800px; /*limita en ancho maximo de las imagenes a 800px */
+    border: 10px solid black; /* añade un borde negro de 10px alrededor de cada imagen*/
+    border-radius: 20px; /* redondea las esquinas */
+    box-shadow: 10px 10px 10px black; /*añade una sombra negra a la imagen */
+    cursor: pointer; /* cambia el curso a una mano cuando el raton pasa sobre la imagen */
+}
+
+.circulo {
+    width: 100px; /* define el ancho del circulo a 100px*/
+    height: 100px; /* define la altura del circulo a 100px */
+    border-radius: 50%; /* rodeondea el elemento para crear una forma de circulo perfecto */
+    background-color: grey; /* establece el color del fondo a gris*/
+    margin: 10px auto; /* añade un margen de 10px arriba y abajo y centra el circulo horizontalemte dentro de su contenedor */
+}
+
+footer {
+    position: fixed; /* fija el pie de pagina en una posicion especifica */
+    background-color: #c7b8b8; /* color de fondo */
+    padding: 20px; /*añade un espaciado interno de 20pc alrededor del contenido de pie de pagina */
+    text-align: center; /* centra el texto en el pie de pagina */
+    bottom: 0; /*ubica el pie de pagina en la parte inferior de la ventana*/
+    width: 100%; /* establece el ancho de pie de pagina al 100 */
+}

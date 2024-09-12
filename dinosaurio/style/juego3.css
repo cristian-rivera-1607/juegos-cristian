@@ -1,0 +1,92 @@
+body {   
+    margin: 0; /*  elimina la margen*/
+    padding: 0; /* elimina el relleno predeterminado*/
+    font-family: 'Sans-Serif'; /* fuente de texto */
+}
+
+/* aca elaboraremos en encabezado */
+#encabezado {
+    width: 100%; /* aca en encabezado ocupe toda la pagina*/
+    background: #c7b8b8; /* aca ponemos el color de fondo */
+    height: 100px; /* fija la altura del encabezado */
+    position: fixed; /* fijamos una posicion fija en la pantalla*/
+    top: 0; /* colocamos en la posisicion superior */
+    left: 0; /* colocamos en la posicion izquierda */
+    z-index: 1000; /* esto hara que el encabezado este por encima de otros elementos*/
+    display: flex; /* hacemos que el contenedor sea flexible para alinear los elementos */
+    align-items: center; /* centra los elementos del contenedor */
+    justify-content: center; /* centrar los elementos */
+}
+
+/* Título dentro del encabezado */
+#nombre {
+    text-align: center; /* centraremos el nombre  */
+}
+
+#nombre h2 {
+    font-size: 36px; /*tamaño de la letra */
+    margin: 0; /* eliminar la margen del h2 */
+    font-family: 'Sans-Serif'; /* fuente del titulo */
+}
+
+/* Navegación */
+nav {
+    position: fixed; /* para que quede fija en la pantalla */
+    top: 0; /* parte superior*/
+    right: 0; /* para que quede en la parte derecha */
+    background: #333; /*  color del fondo del nav */
+    padding: 10px; /* agregar espacio entre los enlaces */
+    border-radius: 0 0 0 10px; /* rodeondea la ezquina inferior de izquierda de navegacion */
+    z-index: 1000; /* aca haremos que la navegacion quede encima del encabezado */
+}
+
+nav a {
+    color: #fff; /* color del texto*/
+    text-decoration: none; /* elimina el subrayado de los enlaces */
+    margin: 0 10px; /* agrega espacio horizontal entre los enlaces */
+    font-size: 16px; /* tamaño de la fuente */
+}
+
+nav a:hover {
+    text-decoration: underline; /* aplica lso estilos cuando el cursor esta en un enlase */
+}
+
+/* Contenido principal */
+main {
+    padding-top: 150px; /* Para dar espacio debajo del encabezado y la navegación */
+    text-align: center; /* centrar un elemento */ 
+}
+
+h1 {
+    font-size: 36px; /* tamaño de la letra */
+}
+
+p {
+    font-size: 20px; /* tamaño de la letra*/
+    margin: 20px auto; /* margen de 20 px */
+    max-width: 800px; /* establece el ancho maximo del parrafo en 800px */
+    font-family: 'Courier New', Courier, monospace; /* fuente del texto */
+}
+
+
+input[type="number"] {
+    padding: 10px; /* agrega un espacio interno de 10 px alrededor del contenido del campo  */
+    font-size: 16px; /* establece el fondo de la fuente en 16px */
+}
+
+button {
+    padding: 10px 20px; /* agrega un espacio interno de 10 px en la parte superior e inferior y 20 px a los lados */
+    font-size: 16px; /* tamaño de la letra */
+    cursor: pointer; /* cambia el cursor a una mano a pasar sobre el boton indicado que es clickcable */
+}
+
+/* Pie de página */
+footer {
+    position: fixed; /* fija el pie de pagina en una posicion especifica */
+    background-color: #c7b8b8; /* color de fondo */
+    padding: 20px; /*añade un espaciado interno de 20pc alrededor del contenido de pie de pagina */
+    text-align: center; /* centra el texto en el pie de pagina */
+    bottom: 0; /*ubica el pie de pagina en la parte inferior de la ventana*/
+    width: 100%; /* establece el ancho de pie de pagina al 100 */
+}
+

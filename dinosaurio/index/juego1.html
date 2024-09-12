@@ -1,0 +1,49 @@
+index: <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Caro Pastorino">
+    <title>ACTIVIDAD JS</title>
+    <link rel="stylesheet" href="../style/juego1.css">
+</head>
+<body onload="iniciar(); iniciarSemaforo();">
+    <header> <!-- aca empezaremos a diseñar en la parte superior de la pagina -->
+        <div id="encabezado"> <!-- aca elaboramos un contenedor donde de elaborara el encabezado-->
+            </div>
+            <nav> <!-- nav lo utilizamos para una seccion de navegacion -->
+                <a href="../index/indexprincipal.html">HOME</a>  <!-- aca es donde le damos la dirreccion de la pagina donde los deberia de llevar al precionar una seccion -->
+            </nav> 
+        </div>
+    </header>
+    <main> <!-- aca donde empezamos a diseñar la parte principal de la pagina-->
+        <h1 id="titulo1">URL Aleatoria</h1> <!-- en la pagina principal se mostrara este titulo de nivel 1-->
+        <a href="javascript:viajarConSuerte();" title="Viajando con suerte"> <!--Pulsa aquí para probar suerte</a>  El texto del enlace es "Pulsa aquí para probar suerte" y tiene un título para proporcionar un texto emergente. -->
+
+        <h1 id="titulol">Pase de Imágenes automático</h1>
+        <div id="cajaSlide"> <!--se incluyen múltiples imágenes -->
+            <img class="imgSlide" src="../img/img1.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img2.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img3.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img4.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img5.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img6.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img7.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img8.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img9.jpg" title="Imagen" alt="Imagen">
+            <img class="imgSlide" src="../img/img10.jpg" title="Imagen" alt="Imagen">
+            <br><br>
+            <form>
+                <input type="button" value="Parar" onclick="clearInterval(temporizador);"> <!--detiene el temporizador mediante -->
+                <input type="button" value="Continuar" onclick="iniciar();"> <!--reinicia el proceso mediante -->
+            </form>
+        </div>
+    </main>
+    <footer> <!-- aca empezaremos a elaborar un pie de pagina-->
+        <div class="container"> <!-- es un contenedor con una clase "container" para el estilo. -->
+            <p>© 2024 Cristian Camilo Rivera. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../main/juego1.js"></script>
+</body>
+</html>

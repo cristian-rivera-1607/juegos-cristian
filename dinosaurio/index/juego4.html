@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Caro Pastorino">
+    <title>Simulador de Semáforo</title>
+    <link rel="stylesheet" href="../style/juego4.css">
+</head> <!-- aca empezaremos a diseñar en la parte superior de la pagina -->
+<body onload="iniciarSemaforo();"> <!--indica que la función iniciarSemaforo se ejecutará automáticamente cuando se cargue la página.-->
+    <header>
+        <div id="encabezado">
+            <nav> <!-- nav lo utilizamos para una seccion de navegacion -->
+                <a href="../index/indexprincipal.html">HOME</a> <!-- aca es donde le damos la dirreccion de la pagina donde los deberia de llevar al precionar una seccion -->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Simulador de Semáforo</h1> <!-- Un encabezado principal para el título de la página.-->
+        <div id="rojo" class="circulo"></div>
+        <div id="amarillo" class="circulo"></div>
+        <div id="verde" class="circulo"></div>
+    </main>
+    <footer> <!-- pie de pagina-->
+        <div class="container"> <!-- es un contenedor con una clase "container" para el estilo. -->
+            <p>© 2024 Cristian Camilo Rivera. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../main/juego4.js"></script>
+</body>
+</html>
